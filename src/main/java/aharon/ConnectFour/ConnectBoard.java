@@ -42,7 +42,7 @@ public class ConnectBoard {
         for (int row = 0; row < height; row++) {
             for (int column = 0; column < width; column++) {
                 int currentValue = board[row][column];
-                if (currentValue == 0) {continue;}
+                if (currentValue == 0) { continue; }
 
                 for (int ix = 0; ix < DIRECTIONS.length; ix++) {
                     int[] directions = DIRECTIONS[ix];
@@ -56,8 +56,8 @@ public class ConnectBoard {
                         int newRow = row + xStep;
                         int newCol = column + yStep;
 
-                        if (newRow < 0 || newRow >= height || newCol < 0 || newCol >= width ||
-                                board[newRow][newCol] != currentValue) {
+                        if (newRow < 0 || newRow >= height || newCol < 0 || newCol >= width
+                                || board[newRow][newCol] != currentValue) {
                             isWinning = false;
                             break;
                         }
