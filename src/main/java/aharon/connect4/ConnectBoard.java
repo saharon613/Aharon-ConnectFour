@@ -1,4 +1,4 @@
-package aharon.ConnectFour;
+package aharon.connect4;
 
 public class ConnectBoard {
     private int width;

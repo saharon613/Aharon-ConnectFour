@@ -1,4 +1,4 @@
-package aharon.ConnectFour;
+package aharon.connect4;
 
 import org.junit.jupiter.api.Test;
 
